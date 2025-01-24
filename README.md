@@ -13,17 +13,16 @@
 4. <b>ParamName Annotation</b>: Digunakan untuk melakukan mapping dari incoming request ke field dengan nama yang berbeda.<br/><br/>
 5. <b>Field Exclusion in Log</b> [version 1.13+]: digunakan untuk menghilangkan value pada log di request body dan request params. <br/><br/>
 6. <b>Common Use</b> [version 1.14+]: <br/>
-<ul>
-   <li>UriFormat.class: Digunakan untuk melakukan mapper URI dengan & dan =</li>
-   <li>PageResponse: digunakan untuk Object Rest Template ketika menerima response Page</li>
-</ul>
+    * UriFormat.class: Digunakan untuk melakukan mapper URI dengan & dan =
+    * PageResponse: digunakan untuk Object Rest Template ketika menerima response Page
+
 7. <b>Mapper Configuration</b>: DEPRECATED!!! Digunakan untuk melakukan konfigurasi mapping dari Data Object ke Data Object ketika system di start.
 8. <b>JSON Serializer & Deserializer</b>: Digunakan untuk serialisasi dan deserialisasi tanggal dan waktu LocalDateTime dan ZonedDateTime.
 9. <b>Indonesia Date Time Serializer & Deserializer</b>: Digunakan untuk serialisasi dan deserialisasi tanggal dan waktu Indonesia (+07:00).
 10. <b>Code Generator and Randomize</b> [version 1.17+]: Digunakan untuk membuat code dengan random alphanumeric.
 11. <b>Orika Data Converter</b>: <br/>
-    Orika Converter digunakan untuk mengubah bentuk sebuah object ke object lain.
-    1. AdditionalDataToListConverter, untuk melakukan convert dari AdditionalData ke List yang akan digunakan oleh Mobile
+    * Orika Converter digunakan untuk mengubah bentuk sebuah object ke object lain.
+    * dditionalDataToListConverter, untuk melakukan convert dari AdditionalData ke List yang akan digunakan oleh Mobile
 12. <b>AstraPay Signature Generator</b><br/>
     AstraPay Signature Generator digunakan untuk membuat signature yang akan digunakan untuk verifikasi apakah request 
 yang diberikan oleh merchant tidak dirubah oleh hacker. Ada beberapa parameter yang digunakan, salah satunya ada <b>astrapayKey</b>, parameter ini diisi dengan value bearer token yang digunakan oleh merchant untuk mengirimkan request.
